@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import swal from 'sweetalert';
 import Loading from './Loading';
 import add from '../Assets/add.png';
+import Calendars from './Calendar';
 
 const Home = () => {
 
@@ -36,14 +37,8 @@ const Home = () => {
         return <Loading></Loading>
     }
 
-
-
-
-
     const handleCompelete = (id) => {
-
         if (id) {
-
             const url = `https://obscure-plains-79086.herokuapp.com/updateTask/${id}`
             fetch(url, {
                 method: "PUT",
@@ -75,20 +70,18 @@ const Home = () => {
                     </form>
                 </div>
             </div>
-            <div className='px-2 md:px-16'>
-                <h2 className='text-3xl my-3 font-extrabold'>My ToDo</h2>
+            <div className='px-2 md:w-1/2 mx-auto'>
+                <h2 className='text-3xl my-3 font-extrabold text-center'>My TaskList</h2>
                 <hr className='h-2' />
                 <div>
                     <div class="overflow-x-auto">
                         <table class="table w-full">
-
                             <thead>
                                 <tr>
                                     <th>Task List</th>
                                 </tr>
                             </thead>
                             <tbody>
-
                                 {
                                     task?.map(t => {
                                         return <tr className='flex items-center py-2 shadow-md my-2 gap-2'>
@@ -96,7 +89,6 @@ const Home = () => {
                                         </tr>
                                     })
                                 }
-
                             </tbody>
                         </table>
                     </div>

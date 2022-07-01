@@ -12,7 +12,7 @@ const Todo = () => {
 
 
     return (
-        <div className='px-2 md:px-16'>
+        <div className='px-2 md:w-1/2 mx-auto'>
             <h2 className='text-4xl md:text-5xl mt-8 mb-3 font-extrabold'>Todo</h2>
             <hr />
 
