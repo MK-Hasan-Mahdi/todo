@@ -13,7 +13,7 @@ const CompletedTasks = () => {
 
     return (
         <div className='md:w-1/2 mx-auto px-2'>
-            <h2 className='text-4xl md:text-5xl mt-8 mb-3 font-extrabold'>Completed Tasks</h2>
+            <h2 className='md:text-3xl mt-8 mb-3 font-extrabold font-mono text-3xl'>Completed Tasks</h2>
             <hr />
 
             <div class="overflow-x-auto">
