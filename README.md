@@ -1,6 +1,6 @@
 # TO-DO 
 
-### Live Site Link : [todo]()
+### Live Site Link : [todo-planning](https://todo-planning.netlify.app/)
 
 ## Used Features
 
